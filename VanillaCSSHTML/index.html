@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">dappr</div>
+      <ul class="nav-icons">
+        <li class="active">🏠</li>
+        <li>📊</li>
+        <li>🏦</li>
+        <li>💼</li>
+        <li>✉️</li>
+        <li>⚙️</li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Good morning, James!</h1>
+        <div class="header-icons">
+          <span>📅</span>
+          <span>🔔</span>
+          <img src="https://via.placeholder.com/32" alt="Profile" class="avatar" />
+        </div>
+      </header>
+
+      <!-- Top Stats Cards -->
+      <section class="stats-cards">
+        <div class="card"> <div class="card-icon">🏦</div> <p class="amount">$143,624</p> <p class="label">Your bank balance</p> </div>
+        <div class="card"> <div class="card-icon">📂</div> <p class="amount">12</p> <p class="label">Uncategorized transactions</p> </div>
+        <div class="card"> <div class="card-icon">👥</div> <p class="amount">7</p> <p class="label">Employees working today</p> </div>
+        <div class="card"> <div class="card-icon">💳</div> <p class="amount">$3,287.49</p> <p class="label">This week's card spending</p> </div>
+      </section>
+
+      <!-- Secondary Section -->
+      <section class="secondary">
+        <!-- Left Side -->
+        <div class="left-panel">
+          <div class="small-card">
+            <p>New clients</p>
+            <h2>54 <span class="percent positive">+18.7%</span></h2>
+          </div>
+          <div class="small-card">
+            <p>Invoices overdue</p>
+            <h2>6 <span class="percent negative">+2.7%</span></h2>
+          </div>
+          <div class="chart-card">
+            <p>Revenue <span class="subtext">Last 7 days VS prior week</span></p>
+            <div class="chart-placeholder">[Chart]</div>
+          </div>
+          <div class="recent-emails">
+            <p>Recent emails</p>
+            <ul>
+              <li><strong>Hannah Morgan</strong> – Meeting scheduled <span>1:24 PM</span></li>
+              <li><strong>Megan Clark</strong> – Update on marketing campaign <span>12:32 PM</span></li>
+              <li><strong>Brandon Williams</strong> – Designly 2.0 is about to launch <span>Yesterday 8:57 PM</span></li>
+              <li><strong>Reid Smith</strong> – My friend Julie loves Dappr! <span>Yesterday 8:49 PM</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-panel">
+          <div class="status-card">
+            <p>Formation status</p>
+            <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+            <small>Estimated processing 4-5 business days</small>
+            <button>View status</button>
+          </div>
+          <div class="todo-list">
+            <p>Your to-Do list</p>
+            <ul>
+              <li>Run payroll <span>Mar 4 at 6:00 pm</span></li>
+              <li>Review time off request <span>Mar 7 at 6:00 pm</span></li>
+              <li>Sign board resolution <span>Mar 12 at 6:00 pm</span></li>
+              <li>Finish onboarding Tony <span>Mar 12 at 6:00 pm</span></li>
+            </ul>
+          </div>
+          <div class="meeting-card">
+            <p>Board meeting</p>
+            <small>Feb 22 at 6:00 PM</small>
+            <p>You have been invited to attend a meeting of the Board Directors.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+/* styles.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f0f7fb; color: #1f2937; }
+.container { display: flex; height: 100vh; }
+.sidebar { width: 72px; background: #000; display: flex; flex-direction: column; align-items: center; padding: 16px 0; }
+.logo { color: #fff; font-weight: 600; margin-bottom: 32px; }
+.nav-icons { list-style: none; display: flex; flex-direction: column; gap: 24px; }
+.nav-icons li { color: #9ca3af; cursor: pointer; font-size: 24px; }
+.nav-icons li.active { color: #fff; }
+.main-content { flex: 1; padding: 24px; overflow-y: auto; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.header h1 { font-size: 24px; font-weight: 600; }
+.header-icons span, .header-icons img { margin-left: 16px; cursor: pointer; }
+.avatar { border-radius: 50%; width: 32px; height: 32px; }
+.stats-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.card { background: #e0eef7; padding: 16px; border-radius: 12px; }
+.card-icon { font-size: 24px; margin-bottom: 8px; }
+.amount { font-size: 20px; font-weight: 600; }
+.label { color: #4b5563; }
+.secondary { display: flex; gap: 16px; }
+.left-panel, .right-panel { background: transparent; display: flex; flex-direction: column; gap: 16px; }
+.left-panel { flex: 2; }
+.right-panel { flex: 1; }
+.small-card { background: #e0eef7; padding: 16px; border-radius: 12px; }
+.small-card p { color: #4b5563; margin-bottom: 4px; }
+.small-card h2 { font-size: 20px; }
+.percent.positive { color: #059669; }
+.percent.negative { color: #b91c1c; }
+.chart-card { background: #e0eef7; padding: 16px; border-radius: 12px; }
+.chart-placeholder { height: 120px; background: #cfe4f2; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #6b7280; }
+.recent-emails { background: #e0eef7; padding: 16px; border-radius: 12px; }
+.recent-emails p { margin-bottom: 8px; font-weight: 500; }
+.recent-emails ul { list-style: none; }
+.recent-emails li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #d1d5db; }
+.recent-emails li:last-child { border-bottom: none; }
+.status-card, .todo-list, .meeting-card { background: #000; color: #fff; padding: 16px; border-radius: 12px; }
+.status-card p, .todo-list p, .meeting-card p { margin-bottom: 8px; }
+.progress-bar { width: 100%; background: #333; border-radius: 8px; overflow: hidden; margin-bottom: 8px; }
+.progress { height: 8px; background: #3b82f6; }
+.status-card button { margin-top: 8px; background: #fff; color: #000; border: none; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+.todo-list ul { list-style: none; }
+.todo-list li { margin-bottom: 8px; display: flex; justify-content: space-between; }
+.meeting-card small { display: block; margin-bottom: 8px; color: #9ca3af; }
