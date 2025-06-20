@@ -5,7 +5,7 @@ import StatCard from '../components/StatCard';
 import RevenueChart from '../components/RevenueChart';
 import EmailList from '../components/EmailList';
 import StatusCard from '../components/StatusCard';
-import TodoList from '../components/ToDoList';
+import ToDoList from '../components/ToDoList';
 import MeetingCard from '../components/MeetingCard';
 import './Dashboard.css';
 
@@ -35,7 +35,7 @@ const Dashboard = () => (
         </div>
         <div className="right-panel">
           <StatusCard />
-          <TodoList />
+          <ToDoList />
           <MeetingCard />
         </div>
       </section>

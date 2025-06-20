@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.secondary {
+  display: flex;
+  gap: 16px;
+}
+
+.left-panel,
+.right-panel {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left-panel {
+  flex: 2;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+.small-card {
+  background: #e0eef7;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.small-card p {
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.small-card h2 {
+  font-size: 20px;
+}
+
+.percent.positive {
+  color: #059669;
+}
+
+.percent.negative {
+  color: #b91c1c;
+}

@@ -1,0 +1,26 @@
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #e0eef7;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.label {
+  color: #4b5563;
+}

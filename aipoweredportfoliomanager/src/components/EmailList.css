@@ -1,0 +1,25 @@
+.recent-emails {
+  background: #e0eef7;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.recent-emails p {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.recent-emails ul {
+  list-style: none;
+}
+
+.recent-emails li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.recent-emails li:last-child {
+  border-bottom: none;
+}

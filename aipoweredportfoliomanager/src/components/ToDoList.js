@@ -1,5 +1,5 @@
 import React from 'react';
-import './TodoList.css';
+import './ToDoList.css';
 
 const todos = [
   { task: 'Run payroll', time: 'Mar 4 at 6:00 pm' },
@@ -8,7 +8,7 @@ const todos = [
   { task: 'Finish onboarding Tony', time: 'Mar 12 at 6:00 pm' },
 ];
 
-const TodoList = () => (
+const ToDoList = () => (
   <div className="todo-list">
     <p>Your to-Do list</p>
     <ul>
@@ -19,4 +19,4 @@ const TodoList = () => (
   </div>
 );
 
-export default TodoList;
+export default ToDoList;
