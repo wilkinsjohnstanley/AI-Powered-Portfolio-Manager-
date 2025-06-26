@@ -3,7 +3,7 @@ import './Sidebar.css'; // optional
 
 const Sidebar = () => (
   <nav className="sidebar">
-    <div className="logo">dappr</div>
+    <div className="logo">Software Solution</div>
     <ul className="nav-icons">
       <li className="active">🏠</li>
       <li>📊</li>
