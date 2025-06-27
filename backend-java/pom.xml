@@ -49,6 +49,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<!--		PostgreSQL Dependency is listed in the pom like so-->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+<!--			<version>17.5</version>-->
+		</dependency>
 	</dependencies>
 
 	<build>
