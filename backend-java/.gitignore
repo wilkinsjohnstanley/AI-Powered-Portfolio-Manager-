@@ -1,7 +1,7 @@
 # Ignore Spring Boot config
 src/main/resources/application.properties
 # Ignore all properties files
-src/main/resources/*.properties
+# src/main/resources/*.properties
 
 HELP.md
 target/
