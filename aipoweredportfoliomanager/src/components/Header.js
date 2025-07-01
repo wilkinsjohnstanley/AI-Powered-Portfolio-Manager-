@@ -1,15 +1,16 @@
-import React from 'react';
-import './Header.css';
+import React from 'react'
 
-const Header = () => (
-  <header className="header">
-    <h1>Good morning, James!</h1>
-    <div className="header-icons">
-      <span>📅</span>
-      <span>🔔</span>
-      <img src="https://via.placeholder.com/32" alt="Profile" className="avatar" />
-    </div>
-  </header>
-);
+const Header = () => {
+  return (
+    <header className='header'>
+      <div className="market-status">Stock and options marketts will be closed on July 4</div>
+      <div className='logo'>📈 Stock Picker</div>
+      <div className="header-actions">
+        <button>🔔</button>
+        <button>👤</button>
+      </div>
+    </header>
+  );
+}
 
-export default Header;
+export default Header

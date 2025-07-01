@@ -1,6 +1,26 @@
 import yfinance as yf
 import streamlit as st
 import pandas as pd
+#import pages
+from pages import login, portfolio, ticket
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Login", "Portfolio", "Ticket"])
+if page =="Login":
+    login.show()
+elif page == "Portfolio":
+    portfolio.show()
+elif page == "Ticket":
+    ticket.show()
+
+import requests
+#Call backend API
+response = requests.get("http://localhost:8001/users")
+#Check response
+if response.status_code==200:
+    users = response.json()
+    st.write("The users are:", users)
+else:
+    st.error("Failed to fetch users.")
 st.title("📈Stocks")
 #User input
 ticker = st.text_input("Enter Ticker Symbol (e.g., AAPL, MSFT, TSLA)", "AAPL")
