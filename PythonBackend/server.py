@@ -30,12 +30,13 @@ def get_price(ticker):
         ohlc = []
         for idx, row in data.iterrows():
             ohlc.append({
-                "x": idx.strftime("%Y-%m-%d %H:%M"),
-                "o": round(row["Open"], 2),
-                "h": round(row["High"], 2),
-                "l": round(row["Low"], 2),
-                "c": round(row["Close"], 2),
+            "x": idx.isoformat(),  # full timestamp format
+            "o": round(row["Open"], 2),
+            "h": round(row["High"], 2),
+            "l": round(row["Low"], 2),
+            "c": round(row["Close"], 2),
             })
+
 
         return jsonify({
             "ticker": ticker,

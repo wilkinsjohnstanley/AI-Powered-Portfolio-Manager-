@@ -6,6 +6,10 @@ import Chart from './components/Chart';
 import Positions from './components/Positions';
 import RecentOrders from './components/RecentOrders';
 import './styles.css';
+import { CandlestickController, CandlestickElement } from 'chartjs-chart-financial';
+import { Chart as ChartJS } from 'chart.js';
+
+ChartJS.register(CandlestickController, CandlestickElement);
 
 function App (){
   return (
