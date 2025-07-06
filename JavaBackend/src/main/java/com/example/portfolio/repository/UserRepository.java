@@ -1,3 +1,16 @@
+/*
+
+Repository (aka DAO - Data Access Object)
+
+Purpose: Manages database operations (CRUD: Create, Read, Update, Delete).
+
+    Interfaces that extend JpaRepository or CrudRepository.
+
+    Spring Data JPA automatically generates implementations at runtime.
+
+    Custom queries can be defined using method names or JPQL.
+
+*/
 package com.example.portfolio.repository;
 import com.example.portfolio.model.User;
 import org.springframework.jdbc.core.JdbcTemplate;

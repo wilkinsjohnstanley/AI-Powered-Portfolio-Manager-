@@ -4,13 +4,13 @@ import pandas as pd
 #import pages
 from pages import login, portfolio, ticket
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Login", "Portfolio", "Ticket"])
-if page =="Login":
-    login.show()
-elif page == "Portfolio":
-    portfolio.show()
-elif page == "Ticket":
-    ticket.show()
+# page = st.sidebar.radio("Go to", ["Login", "Portfolio", "Ticket"])
+# if page =="Login":
+#     login.show()
+# elif page == "Portfolio":
+#     portfolio.show()
+# elif page == "Ticket":
+#     ticket.show()
 
 import requests
 #Call backend API

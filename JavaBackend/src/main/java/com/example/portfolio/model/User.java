@@ -1,3 +1,16 @@
+/*
+
+Model (aka Entity or Domain Model)
+
+Purpose: Represents the data and business logic.
+
+    Models are Java classes (often annotated with @Entity in Spring) that mirror database tables.
+
+    Fields in the class map to columns in the database.
+
+    Can contain business rules, validation logic, or helper methods.
+
+*/
 package com.example.portfolio.model;
 
 public class User {
