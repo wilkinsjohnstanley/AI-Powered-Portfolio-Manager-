@@ -9,32 +9,28 @@ import './styles.css';
 import { CandlestickController, CandlestickElement } from 'chartjs-chart-financial';
 import { Chart as ChartJS } from 'chart.js';
 import {Route, Routes, Link} from 'react-router-dom';
-import Homepage from './components/Homepage';
-import AboutMe from './components/AboutMe';
+
 ChartJS.register(CandlestickController, CandlestickElement);
 
 function App (){
   return (
     <div className='app'>
-
-      <nav className='nav'>
-        <Link to="/home" className='nav-item'>Home Page</Link>
-        <Link to="/about-me" className='nav-item'>About Me</Link>
-      </nav>
-
-      <Routes>
-      <Route path='/home' element={<Homepage/>}/>
-      <Route path='/about-me' element={<AboutMe/>}/>
-      </Routes>
-
       <Header/>
+
       <div className="main">
         <Sidebar/>
-        <Chart/>
-        <div className='right-panel'>
-          <Positions/>
-          <RecentOrders/>
+
+        <div id='chart'>
+          <Chart/>
         </div>
+
+        <div className='right-panel'>
+          <div id='positions'><Positions/></div>
+          <div id='orders'><RecentOrders/></div>
+          
+          
+        </div>
+
       </div>
     </div>
   );
