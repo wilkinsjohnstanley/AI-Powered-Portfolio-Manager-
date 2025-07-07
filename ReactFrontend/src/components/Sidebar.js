@@ -1,29 +1,24 @@
-// components/Sidebar.js
-import React from 'react';
-
-const stocks = [
-    {symbol:'UBER', change: -2.54},
-    {symbol:'HOOD', change: -2.77},
-    {symbol:'GRRR', change: -2.82},
-    {symbol:'SMCI', change: -2.97},
-    {symbol: 'AMD', change: -3.88},
-    {symbol: 'TSLA', change: -4.57},
-];
+import React from 'react'
 
 function Sidebar(){
-    return (
-        <aside className='sidebar'>
-            <h3>AI & LLM</h3>
+    const navItems = [
+        {label:'Chart', target:'chart'},
+        {label:'Positions', target:'positions'},
+        {label:'Orders', target:'orders'},
+    ];
+  return (
+    <aside className='sidebar'>
+         <h3>Smart Stock Portfolio, Inc. </h3>
             <ul>
-                {stocks.map((stock, i)=> (
-                    <li key={i} className={stock.change<0?'down' : 'up'}>
-                        <span>{stock.symbol}</span>
-                        <span>{stock.change}%</span>
-            
+                {navItems.map((item, i)=>(
+                    <li key={i}>
+                        <a href={`#${item.target}`}>{item.label}</a>
                     </li>
                 ))}
             </ul>
-        </aside>
-    );
+        
+    </aside>
+  )
 }
+
 export default Sidebar;

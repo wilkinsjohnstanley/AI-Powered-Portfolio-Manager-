@@ -84,3 +84,6 @@ body {
 .gain {
     color: #4dff4d;
 }
+html {
+  scroll-behavior: smooth;
+}
