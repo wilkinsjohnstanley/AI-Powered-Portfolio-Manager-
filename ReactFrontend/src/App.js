@@ -11,6 +11,7 @@ import { Chart as ChartJS } from 'chart.js';
 import {Route, Routes, Link} from 'react-router-dom';
 import NewsFeed from './components/NewsFeed';
 import CommentSection from './components/CommentSection';
+import Footer from './components/Footer';
 ChartJS.register(CandlestickController, CandlestickElement);
 
 function App (){
@@ -28,13 +29,14 @@ function App (){
         </div>
 
         <div className='right-panel'>
-          <div id='positions'><Positions/></div>
+          {/* <div id='positions'><Positions/></div>
           <div id='orders'><RecentOrders/></div>
-          
+           */}
           
         </div>
 
       </div>
+      <Footer/>
     </div>
   );
 }
