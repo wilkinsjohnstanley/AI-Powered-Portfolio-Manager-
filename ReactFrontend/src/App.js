@@ -10,6 +10,7 @@ import { CandlestickController, CandlestickElement } from 'chartjs-chart-financi
 import { Chart as ChartJS } from 'chart.js';
 import {Route, Routes, Link} from 'react-router-dom';
 import NewsFeed from './components/NewsFeed';
+import CommentSection from './components/CommentSection';
 ChartJS.register(CandlestickController, CandlestickElement);
 
 function App (){
@@ -23,6 +24,7 @@ function App (){
         <div id='chart'>
           <Chart/>
           <NewsFeed stockSymbol='GOOG'/>
+          <CommentSection/>
         </div>
 
         <div className='right-panel'>
