@@ -27,7 +27,7 @@ try {
 }
 
 function Chart() {
-  const [ticker, setTicker] = useState('SOXS');
+  const [ticker, setTicker] = useState('GOOG');
   const [latest, setLatest] = useState(null);
   const [chartType, setChartType] = useState('line');
   const [period, setPeriod] = useState('1d');
