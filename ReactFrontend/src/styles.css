@@ -34,6 +34,11 @@ body {
     justify-content: space-between;
     padding: 5px 0;
 }
+.sidebar a {
+  font-weight: bold;
+  color: #4fc3f7;
+  text-decoration: none;
+}
 .sidebar .down {
     color:#ff4d4d;
 }
