@@ -12,6 +12,7 @@ import {Route, Routes, Link} from 'react-router-dom';
 import NewsFeed from './components/NewsFeed';
 import CommentSection from './components/CommentSection';
 import Footer from './components/Footer';
+import FinancialMarkets from './components/FinancialMarkets';
 ChartJS.register(CandlestickController, CandlestickElement);
 
 function App (){
@@ -23,15 +24,19 @@ function App (){
         <Sidebar/>
 
         <div id='chart'>
-          <Chart/>
+          <Chart/> 
           <NewsFeed stockSymbol='GOOG'/>
           <CommentSection/>
-        </div>
+       </div>
 
         <div className='right-panel'>
           {/* <div id='positions'><Positions/></div>
           <div id='orders'><RecentOrders/></div>
+          <div id='financial-markets'>
+            <FinancialMarkets/>
+           </div>
            */}
+           
           
         </div>
 

@@ -3,8 +3,8 @@ import React from 'react'
 function Sidebar(){
     const navItems = [
         {label:'Chart', target:'chart'},
-        {label:'Positions', target:'positions'},
-        {label:'Orders', target:'orders'},
+        {label:'Recent News', target:'news'},
+        {label:'Comments', target:'comments'},
     ];
   return (
     <aside className='sidebar'>
