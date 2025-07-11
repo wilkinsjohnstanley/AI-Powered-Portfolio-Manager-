@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import './NewsFeed.css'
+import './NewsFeed.css';
 const NewsFeed = ({stockSymbol = "GOOG "}) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
